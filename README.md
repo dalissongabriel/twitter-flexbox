@@ -2,7 +2,7 @@
 	<img alt="Logo" src="/images/avatar.jpeg" width="200px" />
 </h1>
 
-<h3 align="center"><a href="https://react-dtmoney.vercel.app/">Twitter UI Clone</a></h3>
+<h3 align="center"><a href="https://twitter-flexbox-teal.vercel.app/">Twitter UI Clone</a></h3>
 
 <p align="center">Uma página web desenvolvida para treinar flexbox!!</p>
 
