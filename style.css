@@ -46,6 +46,9 @@ header#main-header .content {
   height: 100%;
 }
 
+header#main-header nav {
+  order: 0;
+}
 header#main-header nav ul {
   display: flex;
   align-items: center;
@@ -77,8 +80,13 @@ header#main-header nav ul li img {
   margin-right: 7px;
 }
 
+header#main-header .content > img {
+  order: 1;
+}
+
 header#main-header div.side {
   display: flex;
+  order: 2;
 }
 
 header#main-header div.side input {
@@ -337,6 +345,8 @@ div.wrapper-content aside.profile .followers li {
   margin: 0 5px 5px 0;
 }
 
+
+
 div.wrapper-content aside.profile .images ul {
   margin-top: 20px;
   display: flex;
@@ -556,3 +566,88 @@ div.wrapper-content aside.widgets .follow ul li > a {
   text-decoration: none;
   font-size: 14px;
 }
+
+@media(max-width: 1200px) {
+  div.wrapper-content aside.profile .followers li {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media(max-width: 900px) {
+  .content {
+    padding: 0 16px;
+  }
+  header#main-header nav {
+    display: none;
+    order: 2;
+  }
+
+  header#main-header .content > img {
+    order: 1;
+  }
+
+  header#main-header div.side {
+    order: 0;
+  }
+
+  header#main-header div.side input[type=search] {
+    display: none;
+  }
+
+  div.banner {
+    height: 200px;
+  }
+
+  div.bar .content {
+    justify-content: center;
+    padding-left: 0px;
+  }
+
+  div.bar .content .actions {
+    display: none;
+  }
+
+  div.wrapper-content aside.profile {
+    display: none;
+  }
+
+}
+
+@media(max-width: 600px) {
+  header#main-header .content > img {
+    display: none;
+  }
+
+  div.banner {
+    display: none;
+  }
+
+  div.bar {
+    display: none;
+  }
+
+  div.wrapper-content aside.widgets {
+    display: none;
+    width: 0px;
+  }
+
+  div.wrapper-content section.timeline {
+    margin: 10px 0;
+  }
+
+  div.wrapper-content section.timeline nav {
+    padding: 10px 10px;
+  }
+
+  div.wrapper-content section.timeline nav a {
+    font-size: 12px;
+  }
+}
+
+/* 
+xs, extra-small: 0px.
+sm, small: 600px.
+md, medium: 900px.
+lg, large: 1200px.
+xl, extra-large: 1536px. */
