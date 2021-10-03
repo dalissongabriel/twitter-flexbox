@@ -244,7 +244,7 @@ div.wrapper-content {
 }
 
 div.wrapper-content aside.profile {
-  width: 260px;
+  width: 290px;
 }
 
 div.wrapper-content aside.profile img.avatar {
@@ -354,6 +354,7 @@ div.wrapper-content aside.profile .images ul li {
 
 div.wrapper-content section.timeline {
   flex-grow: 0;
+  max-width: 560px;
   background-color: #fff;
   margin: 10px 20px 0;
 }
